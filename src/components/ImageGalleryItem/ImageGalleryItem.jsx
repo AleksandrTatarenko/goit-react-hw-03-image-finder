@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import {Item, Image} from 'components/ImageGalleryItem/ImageGalleryItem.styled'
 
-export const ImageGalleryItem = ({imageUrl}) => {
-    return (<Item>
+export const ImageGalleryItem = ({id, imageUrl, onClick}) => {
+    return (<Item onClick={()=>onClick(id)}>
         <Image src={imageUrl} alt="" />
     </Item>);
 }
