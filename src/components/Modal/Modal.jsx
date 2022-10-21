@@ -11,5 +11,6 @@ export const Modal = ({largeImageUrl, onClick}) => {
 }
 
 Modal.propTypes = {
-    largeImageUrl: PropTypes.string.isRequired
+    largeImageUrl: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired
 }
