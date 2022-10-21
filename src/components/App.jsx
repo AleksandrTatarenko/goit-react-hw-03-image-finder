@@ -42,7 +42,10 @@ export class App extends Component {
   }
 
   onSubmit = (searchQuery) => {
-    this.setState({ searchQuery: [searchQuery.toString()] })
+    this.setState({
+      searchQuery: [searchQuery.toString()],
+      page: 1
+    })
   }
 
   onButtonClick = () => {
