@@ -3,7 +3,7 @@ import { Overlay, Window} from 'components/Modal/Modal.styled';
 
 
 export const Modal = ({largeImageUrl, onClick}) => {
-    return (<Overlay onClick={onClick}>
+    return (<Overlay id='Overlay' onClick={onClick}>
                 <Window>
                     <img src={largeImageUrl} alt="" />
                 </Window>

@@ -62,8 +62,11 @@ export class App extends Component {
     })
   }
 
-  onOverlayClick = () => {
-    this.setState({ isOpen: false });
+  onOverlayClick = (e) => {
+    const overlay = document.getElementById('Overlay');
+    if (e.target===overlay) {
+      this.setState({ isOpen: false });
+    }
   }
 
   render() {
